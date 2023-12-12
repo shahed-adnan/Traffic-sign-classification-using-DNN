@@ -1,0 +1,11 @@
+1. 'No module found as cv2': There was an issue while installing opencv-python. It was related to path. However, I solved the issue
+by running the following lines in notebook script.
+
+import sys
+    
+!{sys.executable} -m pip install opencv-python
+
+and then,
+import cv2
+
+was not creating anymore issue. Earlier it was showing 'No module found as cv2'
